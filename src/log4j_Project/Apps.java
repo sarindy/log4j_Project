@@ -1,14 +1,14 @@
 package log4j_Project;
 
-import org.apache.log4j.Logger;
+public class Apps extends LoggerAbstract {
+	
 
-public class Apps {
-	static Logger logger = Logger.getLogger(Apps.class.getName());
+	public static void main(String[] args)  {
 
-	public static void main(String[] args) {
+		TriggerLog triggerLog=new TriggerLog();
 
-		logger.debug("Debug Message");
-		logger.info("Info Message");
+		triggerLog.logger.debug("Debug Message");
+		
 
 	}
 
